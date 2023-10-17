@@ -1,0 +1,47 @@
+section.first {
+  margin-bottom: 3rem;
+  h2 {
+    font-size: 2rem;
+  }
+  div.headline {
+    text-align: center;
+    width: 70%;
+    margin: 5rem auto;
+    h2 {
+      color: green;
+    }
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+  article {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    column-gap: 10rem;
+
+    div {
+      display: flex;
+
+      &.item {
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      &.text {
+        flex-direction: column;
+
+        p {
+          font-size: 1.4rem;
+          line-height: 200%;
+        }
+      }
+
+      img {
+        width: 32px;
+      }
+    }
+  }
+}
